@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .features {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>This is a custom web page that you can access via URL, similar to the example you shared.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <strong>Feature 1</strong>
+                <p>Responsive design that works on all devices</p>
+            </div>
+            <div class="feature">
+                <strong>Feature 2</strong>
+                <p>Modern gradient background and clean UI</p>
+            </div>
+            <div class="feature">
+                <strong>Feature 3</strong>
+                <p>Easy to customize and deploy</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <script>
+        // Simple JavaScript for interactivity
+        document.querySelector('.btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Welcome! This is your custom web page.');
+        });
+    </script>
+</body>
+</html>
